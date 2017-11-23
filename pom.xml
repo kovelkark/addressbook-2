@@ -81,6 +81,24 @@
                 <artifactId>jetty-maven-plugin</artifactId>
                 <version>9.2.3.v20140905</version>
             </plugin>
+            <plugin>
+   <groupId>org.codehaus.mojo</groupId>
+   <artifactId>cobertura-maven-plugin</artifactId>
+   <version>2.7</version>
+   <configuration>
+       <formats>
+           <format>html</format>
+           <format>xml</format>
+       </formats>
+       <reportSets>
+           <reportSet>
+               <reports>
+                   <report>cobertura</report>
+               </reports>
+           </reportSet>
+       </reportSets>
+   </configuration>     
+</plugin>
         </plugins>
     </build>
 </project>
